@@ -14,6 +14,11 @@ app.use(express.static(path.join(__dirname, "views")));
 app.get("/", (req, res) => {
  res.render("index", { locals: { text: "text" } });
 });
+
+/////////// middleware//////////
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 //accessing the about page within the html/ejs
 app.get("/about", (req, res) => {
   res.render("about");
@@ -22,31 +27,7 @@ app.get("/about", (req, res) => {
 //importing players from the data(players.js)
 app.use("/players", playerRoute); 
 
-// const bodyParser = require("body-parser");
-
-// // // middleware
-// app.use(bodyParser.json({ extended: true }));
-// app.use(bodyParser.urlencoded({ extended: true }));
-
 app.listen(port, () => {
 console.log(`Server is listening on port: ${port}`);
 });
  
-
-
-// //home route & importing routes
-
-// // accessing html
-// app.get("/",  (req, res) => {
-//   res.render("index", { locals: { text: "text", players: players } });
-// });
-
-// app.get("/about", (req, res) => {
-//   res.render("about");
-// });
-
-// // set static folders
-// const path = require("path");
-// app.use(express.static(path.join(__dirname, "views")));
-
-

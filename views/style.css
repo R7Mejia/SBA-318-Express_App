@@ -27,20 +27,22 @@ p{
 }
 div {
     background-color: rgb(2, 2, 2);
-  max-width: 300px;
+  max-width: 600px;
   margin: 20px auto;
   border: 1px white solid;
-  box-shadow: 7px 3px 7px yellow;
+  box-shadow: 7px 3px 7px rgb(237, 237, 222);
 }
 
 label {
   display: block;
+  margin: 0 0 0 25px;
   margin-bottom: 5px;
   text-align: left;
 }
 
 input {
-  width: 100%;
+  background-color: cyan;
+  width: 50%;
   padding: 8px;
   margin-bottom: 15px;
   box-sizing: border-box;
@@ -56,7 +58,8 @@ button {
 }
 
 button:hover {
-  background-color: #09b6f0;
+  background-color: #3fbde7;
+  color: #61f666;
 }
 
 
