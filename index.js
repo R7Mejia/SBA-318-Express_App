@@ -3,7 +3,7 @@ const app = express();
 const playerRoute = require("./routes/playerRoute"); 
 const port = 5000;
 
-// installing EJS
+// installing EJS/using the method app.set(...)
 app.set("view engine", "ejs");
 
 //homePage & accessing/creating a path top html and css (which now has become 'ejs' instead of html)

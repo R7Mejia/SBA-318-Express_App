@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
   res.json(players);
 });
 
-//accessing one player
+//accessing one player /using a route parameter
 router.get("/:number", (req, res, next) => {
     const player = players.find((p)=> p.number == req.params.number)
     if (player) res.json(player);

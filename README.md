@@ -21,6 +21,6 @@ Obviously used to make the app work?
 I've created the players' images using AI
 
 # TEMPLATES
-I believe I have used both *view* and *engine* templates...
+I believe I have used both *view (html)* and *engine (ejs)* templates...
 
-[^1]: **So, that being said, I trust I have ==completed== all of the SBA ==Requirements==**
+**So, that being said, I trust I have ==completed== all of the SBA ==Requirements==**
